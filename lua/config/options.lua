@@ -4,3 +4,8 @@
 
 vim.opt.colorcolumn = "80"
 vim.opt.scrolloff = 8
+
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.undodir = os.getenv("HOME") .. "/.cache/nvim/undo"
+vim.opt.undofile = true
