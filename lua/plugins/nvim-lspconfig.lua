@@ -19,7 +19,7 @@ return {
             desc = "Show inlay hints in current buffer",
           },
           { "K", "<cmd>RustHoverActions<cr>", desc = "Hover Actions (Rust)" },
-          { "<leader>cR", "<cmd>RustRunnables<cr>", desc = "Run Runnables(Rust)" },
+          { "<leader>cR", "<cmd>RustRunnables<cr>", desc = "Run Runnables (Rust)" },
           { "<leader>cD", "<cmd>RustDebuggables<cr>", desc = "Run Debuggables (Rust)" },
         },
       },
