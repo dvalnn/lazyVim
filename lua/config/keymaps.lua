@@ -15,3 +15,8 @@ vim.keymap.set("n", "<leader>d", '"_d')
 vim.keymap.set("v", "<leader>d", '"_d')
 
 vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+vim.keymap.set("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>")
+vim.keymap.set("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>")
+vim.keymap.set("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>")
+vim.keymap.set("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>")
