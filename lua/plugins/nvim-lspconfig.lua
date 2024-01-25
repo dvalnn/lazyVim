@@ -22,6 +22,33 @@ return {
           { "<leader>cR", "<cmd>RustRunnables<cr>", desc = "Run Runnables (Rust)" },
           { "<leader>cD", "<cmd>RustDebuggables<cr>", desc = "Run Debuggables (Rust)" },
         },
+        settings = {
+          ["rust-analyzer"] = {
+            cargo = {
+              allFeatures = true,
+              loadOutDirsFromCheck = true,
+              runBuildScripts = true,
+            },
+            -- Add clippy lints for Rust.
+            checkOnSave = {
+              allFeatures = true,
+              allTargets = false,
+              command = "clippy",
+              extraArgs = { "--no-deps" },
+            },
+            check = {
+              allTargets = false,
+            },
+            procMacro = {
+              enable = true,
+              ignored = {
+                ["async-trait"] = { "async_trait" },
+                ["napi-derive"] = { "napi" },
+                ["async-recursion"] = { "async_recursion" },
+              },
+            },
+          },
+        },
       },
     },
   },
