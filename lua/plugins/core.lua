@@ -2,8 +2,9 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "tokyonight",
-      colorscheme = "catppuccin",
+      colorscheme = function()
+        vim.cmd("colorscheme onedark_vivid")
+      end,
     },
   },
   {
