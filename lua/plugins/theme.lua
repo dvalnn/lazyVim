@@ -1,5 +1,20 @@
 return {
   {
+    "hiphish/rainbow-delimiters.nvim",
+    event = { "BufReadPre", "BufNewFile" }, -- load when a buffer is opened or created
+  },
+  {
+    "brenoprata10/nvim-highlight-colors",
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require("nvim-highlight-colors").setup({
+        render = "background", -- or 'foreground' or 'first_column'
+        enable_named_colors = true,
+        enable_tailwind = false,
+      })
+    end,
+  },
+  {
     "olimorris/onedarkpro.nvim",
     name = "onedarkpro",
     priority = 1000,
