@@ -48,6 +48,7 @@ return {
                   ["napi-derive"] = { "napi" },
                   ["async-recursion"] = { "async_recursion" },
                   leptos_macro = { "server" },
+                  tokio_macros = { "main" },
                 },
               },
             },
